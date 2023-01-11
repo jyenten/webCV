@@ -1,0 +1,12 @@
+.feature{
+    margin: 4rem 0;
+}
+.feature h2{
+    color: burlywood;
+}
+
+.feature .content{
+    position: relative;
+    bottom: 2rem;
+
+}
