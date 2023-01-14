@@ -1,12 +1,72 @@
-.feature{
-    margin: 4rem 0;
-}
-.feature h2{
-    color: burlywood;
+main{
+    background: gray;
+    padding: 3rem;
+    
 }
 
-.feature .content{
+.feature{
+    margin-bottom: 4rem;
+}
+
+.feature h2{
+    color: burlywood;
+    text-shadow: 1px 1px white;
+}
+
+.feature h3{
+    text-shadow: 1px 1px rgb(22, 3, 3);
+}
+
+.feature:not(.wishlist) .content{
     position: relative;
     bottom: 2rem;
+
+}
+
+
+.wishlist p{
+    width: min(600px, 100%)
+     }
+
+/* poznámka */  /* MDN vyhledavani */
+
+
+@media screen and (min-width: 810px) {
+    main{
+        padding: 10rem;
+    }
+    .feature{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+
+        margin-bottom: 10rem;
+        padding: 1rem 0;
+
+        border-right: 0.5rem solid white;
+    }
+    .feature:nth-child(even) {
+        flex-direction: row-reverse;
+        border-right: none;
+        border-left: 0.75rem solid white;
+     }
+     
+     
+
+
+    .feature figure{
+        flex: 7;
+    }
+
+    .feature .content{
+        flex: 3;
+        position: static;
+        padding:  0 2rem;
+    }
+
+    .feature:not(.wishlist) .content{
+        position: static;
+        
+    }
 
 }

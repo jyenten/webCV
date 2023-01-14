@@ -1,0 +1,19 @@
+header{
+    min-height: 100vh;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/433/327/824/crow-graveyards-grim-dawn-wallpaper-preview.jpg);
+    background-repeat: no repeat;
+    background-position: 40% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+@media screen and  (min-width: 400px){
+
+    header{
+        background-position: 50% 50%;
+
+    }
+
+}
+    

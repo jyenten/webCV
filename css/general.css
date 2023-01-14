@@ -1,3 +1,10 @@
+:root{
+    --bg-secondary: black;
+    --cl-accent: white;
+}
+/* proměnná se volá jako var() na jednoduchý přepis více proměnných.*/
+
+
 *,
 * ::before
 * ::after{
@@ -13,11 +20,20 @@ html{
     -webkit-text-size-adjust: 100%;
 }
 
+header{
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    
+}
+
+
 body{
+
+
     color :antiquewhite;
     font-family: 'Bebas Neue', cursive;
     background-color: black;
     margin: 0;
+    
 }
 b,
 strong{
@@ -34,20 +50,28 @@ img{
     height: auto;
 }
 h1,h2,h3 {margin: 0;}
+
 h2{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
 }
 
 h3{
-    font-size: 1,7rem;
+    font-size: clamp(1.5rem, 10vw, 3rem);
 }
+
 p{
-    font-size: 1,25rem;
+    font-size: 1.25rem;
     font-family: Verdana, Tahoma, sans-serif;
+    font-family: 2vw;
 }
 
 figure{
     margin : 0;
 }
 
-.container{padding: 0 1,25;}
+.container{
+    padding: 0 1.25;
+    max-width: 810px;
+    margin: 0 auto;
+
+}
