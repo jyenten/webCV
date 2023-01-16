@@ -1,3 +1,0 @@
-# webCV
-weboCvVěechno
-

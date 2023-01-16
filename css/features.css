@@ -1,6 +1,7 @@
 main{
-    background: gray;
+    background: var(--bg-secondary);
     padding: 3rem;
+    position: relative;
     
 }
 
@@ -9,7 +10,7 @@ main{
 }
 
 .feature h2{
-    color: burlywood;
+    color: var(--cl-accent);
     text-shadow: 1px 1px white;
 }
 
@@ -24,16 +25,15 @@ main{
 }
 
 
-.wishlist p{
-    width: min(600px, 100%)
-     }
 
 /* poznámka */  /* MDN vyhledavani */
 
 
 @media screen and (min-width: 810px) {
+
+
     main{
-        padding: 10rem;
+        padding: 3rem;
     }
     .feature{
         display: flex;
@@ -43,30 +43,24 @@ main{
         margin-bottom: 10rem;
         padding: 1rem 0;
 
-        border-right: 0.5rem solid white;
+        border-right: 0.5rem solid var(--cl-accent);
     }
     .feature:nth-child(even) {
         flex-direction: row-reverse;
         border-right: none;
-        border-left: 0.75rem solid white;
+        border-left: 0.75rem solid var(--cl-accent);
      }
      
-     
-
-
     .feature figure{
         flex: 7;
     }
 
-    .feature .content{
+   .feature .content{
         flex: 3;
         position: static;
         padding:  0 2rem;
-    }
 
-    .feature:not(.wishlist) .content{
-        position: static;
         
     }
 
-}
+ }

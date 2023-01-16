@@ -1,6 +1,8 @@
 :root{
-    --bg-secondary: black;
-    --cl-accent: white;
+
+    --bg-secondary: rgb(255, 255, 255);
+
+    --cl-accent: rgb(3, 2, 2);
 }
 /* proměnná se volá jako var() na jednoduchý přepis více proměnných.*/
 
@@ -18,6 +20,11 @@ html{
     font-size: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+    position: absolute;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    
 }
 
 header{
@@ -25,14 +32,34 @@ header{
     
 }
 
+.menu{
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
 
 body{
 
 
-    color :antiquewhite;
-    font-family: 'Bebas Neue', cursive;
-    background-color: black;
+    color : var(--cl-accent);
+    font-family: Verdana, Geneva, Tahoma, sans-serif,cursive;
+    background-color : black;
     margin: 0;
+
+    @media screen and (min-width: 810px) {
+        background-attachment: no repeat x;
+
+        
+    }
+
     
 }
 b,
@@ -52,17 +79,23 @@ img{
 h1,h2,h3 {margin: 0;}
 
 h2{
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    font-size: clamp(1.5rem, 12vw, 3rem);
 }
 
 h3{
-    font-size: clamp(1.5rem, 10vw, 3rem);
+    font-size: clamp(1.5rem, 8vw, 2rem);
 }
 
 p{
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 5vw, 1.35rem);
     font-family: Verdana, Tahoma, sans-serif;
     font-family: 2vw;
+}
+form{
+    font-size: clamp(1.5rem, 8vw, 2.15rem);
+    margin-top: 3rem;
+    
+
 }
 
 figure{
@@ -70,8 +103,8 @@ figure{
 }
 
 .container{
-    padding: 0 1.25;
-    max-width: 810px;
+    padding: 0 1.5;
+    max-width: 2550px;
     margin: 0 auto;
 
 }

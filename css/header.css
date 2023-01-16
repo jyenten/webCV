@@ -1,10 +1,68 @@
 header{
-    min-height: 100vh;
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/433/327/824/crow-graveyards-grim-dawn-wallpaper-preview.jpg);
+    min-height: 50vh;
+   /* background-image: url(https://c4.wallpaperflare.com/wallpape
+   r/433/327/824/crow-graveyards-grim-dawn-wallpaper-preview.jpg);*/
+    background-color: var(--cl-accent);
     background-repeat: no repeat;
     background-position: 40% 50%;
     background-size: cover;
     background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    color: var(--bg-secondary);
+
+}
+
+@media screen and (max-width: 410px) {
+   
+    header{
+       align-items: center;
+    }
+    
+}
+
+
+
+
+.main-nav {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    
+
+    z-index: 2;
+
+    
+
+
+}
+
+
+
+.main-nav .menu{
+    display: flex;
+
+    font-size: clamp(1rem, 3vw,  2.5rem);
+    line-height: 1;
+
+    color: var(--bg-secondary);
+    
+    gap: clamp(0.75rem, 2vw, 2rem);
+    
+}
+
+.main-nav a{
+    
+    display: block;
+
+    padding-top: 0.5rem;
+    padding-top: 0.3rem;
 
 }
 
@@ -14,6 +72,9 @@ header{
         background-position: 50% 50%;
 
     }
+    
 
 }
+
+
     
