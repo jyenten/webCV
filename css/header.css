@@ -11,6 +11,7 @@ header{
     display: flex;
     align-items: center;
     color: var(--bg-secondary);
+    position: relative;
 
 }
 
